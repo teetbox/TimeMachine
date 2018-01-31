@@ -10,6 +10,11 @@
 		C913A0E62020455B005FAAB5 /* TimeMachine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C913A0DC2020455B005FAAB5 /* TimeMachine.framework */; };
 		C913A0EB2020455B005FAAB5 /* TimeMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C913A0EA2020455B005FAAB5 /* TimeMachineTests.swift */; };
 		C913A0ED2020455B005FAAB5 /* TimeMachine.h in Headers */ = {isa = PBXBuildFile; fileRef = C913A0DF2020455B005FAAB5 /* TimeMachine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C91D29AF2021783500F28DCB /* TimeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D29AE2021783500F28DCB /* TimeMachine.swift */; };
+		C91D29B12021791800F28DCB /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D29B02021791800F28DCB /* Cache.swift */; };
+		C91D29B320217AC800F28DCB /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D29B220217AC800F28DCB /* Registration.swift */; };
+		C91D29B520217D1100F28DCB /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D29B420217D1100F28DCB /* CacheTests.swift */; };
+		C91D29B720217FC300F28DCB /* RegistrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D29B620217FC300F28DCB /* RegistrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,11 @@
 		C913A0E52020455B005FAAB5 /* TimeMachineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeMachineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C913A0EA2020455B005FAAB5 /* TimeMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMachineTests.swift; sourceTree = "<group>"; };
 		C913A0EC2020455B005FAAB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C91D29AE2021783500F28DCB /* TimeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMachine.swift; sourceTree = "<group>"; };
+		C91D29B02021791800F28DCB /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		C91D29B220217AC800F28DCB /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		C91D29B420217D1100F28DCB /* CacheTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		C91D29B620217FC300F28DCB /* RegistrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +83,7 @@
 			children = (
 				C913A0DF2020455B005FAAB5 /* TimeMachine.h */,
 				C913A0E02020455B005FAAB5 /* Info.plist */,
+				C913A0F6202046B1005FAAB5 /* Source */,
 			);
 			path = TimeMachine;
 			sourceTree = "<group>";
@@ -81,9 +92,21 @@
 			isa = PBXGroup;
 			children = (
 				C913A0EA2020455B005FAAB5 /* TimeMachineTests.swift */,
+				C91D29B620217FC300F28DCB /* RegistrationTests.swift */,
+				C91D29B420217D1100F28DCB /* CacheTests.swift */,
 				C913A0EC2020455B005FAAB5 /* Info.plist */,
 			);
 			path = TimeMachineTests;
+			sourceTree = "<group>";
+		};
+		C913A0F6202046B1005FAAB5 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C91D29AE2021783500F28DCB /* TimeMachine.swift */,
+				C91D29B220217AC800F28DCB /* Registration.swift */,
+				C91D29B02021791800F28DCB /* Cache.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +171,7 @@
 				TargetAttributes = {
 					C913A0DB2020455B005FAAB5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					C913A0E42020455B005FAAB5 = {
@@ -196,6 +220,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91D29B12021791800F28DCB /* Cache.swift in Sources */,
+				C91D29B320217AC800F28DCB /* Registration.swift in Sources */,
+				C91D29AF2021783500F28DCB /* TimeMachine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +230,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C91D29B720217FC300F28DCB /* RegistrationTests.swift in Sources */,
+				C91D29B520217D1100F28DCB /* CacheTests.swift in Sources */,
 				C913A0EB2020455B005FAAB5 /* TimeMachineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +363,7 @@
 		C913A0F12020455B005FAAB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -346,6 +376,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bizersoft.TimeMachine;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -354,6 +385,7 @@
 		C913A0F22020455B005FAAB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -374,6 +406,7 @@
 		C913A0F42020455B005FAAB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TimeMachineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -387,6 +420,7 @@
 		C913A0F52020455B005FAAB5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TimeMachineTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
